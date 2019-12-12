@@ -17,6 +17,27 @@ fly -t concourseci e -c run_dotnet_test.yml -i repo=.
 dotnet test
 ```
 
+## Expected output
+
+Running `dotnet test` locally returns:
+
+```
+nodev@xounges.net:~/gits/tmp/concourse_dotnet_repro git:(master)
+> dotnet test
+Test run for ~/gits/tmp/concourse_dotnet_repro/PrimeService.Tests/bin/Debug/netcoreapp2.2/PrimeService.Tests.dll(.NETCoreApp,Version=v2.2)
+Microsoft (R) Test Execution Command Line Tool Version 16.3.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+A total of 1 test files matched the specified pattern.
+
+Test Run Successful.
+Total tests: 11
+     Passed: 11
+ Total time: 1.5319 Seconds
+```
+
 ## Error output
 
 Resulting error
